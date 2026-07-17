@@ -199,7 +199,31 @@ fn links_page() -> Html<String> {
 <ul class="linklist">
 <li><a href="https://fabeee.co.jp/business/" target="_blank" rel="noopener noreferrer">fabeee — 無料IT研修・転職エージェント事業紹介</a></li>
 </ul>
-"#
+
+<h2>Google Chromeブラウザで「保護されていない通信」と出る場合の対処方法</h2>
+<p>Edge(Windowsの証明書ストアを使用)では正常なのに対し、Chromeは独自の
+「Chrome Root Store」という、Windowsとは別の信頼済みルート証明書リストを
+持っています。Let's Encryptの新しいルート証明書「Root YE」がまだお使いの
+Chromeのバージョンに反映されていない可能性が高いです(Windows自体には
+既に配信済みでも、Chrome側は別スケジュールで更新されるため)。</p>
+<p><strong>対処法:</strong></p>
+<ol>
+<li>Chromeを開き、アドレスバーに <code>chrome://settings/help</code> と入力</li>
+<li>自動的に最新バージョンへの更新が始まります(既に最新の場合は「Google Chromeは最新版です」と表示)</li>
+<li>更新後、Chromeを再起動してから再度アクセス</li>
+</ol>
+<p>サーバー側(証明書・nginx設定)に問題が無いことが確認できている場合、
+Chrome側の更新で解消することが多いです。</p>
+<p><strong>実際に効いた解決策:</strong> 上記を試しても直らない場合は、
+<strong>Chromeをタスクバーの×だけで閉じるのではなく、一旦完全に終了して
+から再度開き直す</strong>と解消することがあります(実際にこの方法で
+解決した事例あり)。タスクマネージャーでChromeのプロセスが残っていないか
+確認し、残っていれば終了させてから起動し直してください。</p>
+<ul class="linklist">
+<li>{chrome_root_store_search}</li>
+</ul>
+"#,
+        chrome_root_store_search = google_search_link("Chrome Root Store とは", "Chrome Root Store 証明書 保護されていない通信"),
     );
     Html(page_shell("リンク集 | aon.tokyo", &body))
 }
