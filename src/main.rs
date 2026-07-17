@@ -67,6 +67,8 @@ fn page_shell(title: &str, body: &str) -> String {
 body {{ font-family: -apple-system, "Hiragino Sans", "Yu Gothic", sans-serif; max-width: 780px; margin: 2rem auto; padding: 0 1rem; line-height: 1.7; color: #222; }}
 h1 {{ font-size: 1.6rem; }}
 h2 {{ font-size: 1.2rem; margin-top: 2rem; border-bottom: 2px solid #eee; padding-bottom: 0.3rem; }}
+a {{ color: #222; }}
+a:visited {{ color: #222; }}
 nav a {{ margin-right: 1rem; }}
 ul.linklist li {{ margin-bottom: 0.5rem; }}
 footer {{ margin-top: 3rem; font-size: 0.85rem; color: #777; }}
@@ -190,6 +192,7 @@ fn municipal_page() -> Html<String> {
 <h2>ごみ・廃棄物の再資源化</h2>
 <ul class="linklist">
 <li>{fermentation}</li>
+<li>{tunnel_compost}</li>
 <li>{mercury_filter}</li>
 <li>{mixed_fuel}</li>
 <li>{plastic_oil}</li>
@@ -199,15 +202,24 @@ fn municipal_page() -> Html<String> {
 <h2>陸上養殖・農業・林業</h2>
 <ul class="linklist">
 <li>{aquaculture}</li>
+<li>{aquaculture_success_g}</li>
+<li>{aquaculture_success_yt}</li>
+<li>{aquaculture_failure_g}</li>
+<li>{aquaculture_failure_yt}</li>
 </ul>
 "#,
         drone = youtube_search_link("工場・倉庫誘致PR ドローン空撮", "工場 倉庫 企業誘致 ドローン 空撮"),
         fermentation = youtube_search_link("生ごみを発酵させて肥料・燃料にする方法", "生ごみ 発酵 肥料 燃料 納豆菌"),
+        tunnel_compost = youtube_search_link("生ごみ+燃えるごみを一緒に発酵させるトンネルコンポスト方式", "トンネルコンポスト 生ごみ 燃えるごみ 発酵 肥料 燃料"),
         mercury_filter = google_search_link("ごみ焼却時の水銀ガス回収 日立造船フィルター", "ごみ焼却 水銀ガス 回収 日立造船 フィルター"),
         mixed_fuel = youtube_search_link("燃えるごみとプラスチックごみを混ぜて燃料にする", "燃えるごみ プラスチックごみ 混ぜる 燃料"),
         plastic_oil = youtube_search_link("廃プラスチックを業務用マイクロ波で石油にする", "廃プラスチック 業務用 マイクロ波 石油"),
         orange_oil = youtube_search_link("発泡スチロールをオレンジオイルで溶かす", "発泡スチロール オレンジオイル 溶かす"),
         aquaculture = youtube_search_link("陸上養殖(プール・水槽)魚介類 普及", "陸上養殖 プール 水槽 魚介類"),
+        aquaculture_success_g = google_search_link("陸上養殖 成功例", "陸上養殖 成功例"),
+        aquaculture_success_yt = youtube_search_link("陸上養殖 成功例", "陸上養殖 成功例"),
+        aquaculture_failure_g = google_search_link("陸上養殖 失敗例", "陸上養殖 失敗例"),
+        aquaculture_failure_yt = youtube_search_link("陸上養殖 失敗例", "陸上養殖 失敗例"),
     );
     Html(page_shell("地域・企業誘致提案 | aon.tokyo", &body))
 }
