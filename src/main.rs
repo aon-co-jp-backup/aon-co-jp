@@ -233,12 +233,18 @@ fn municipal_page() -> Html<String> {
 
 <h2>ごみ・廃棄物の再資源化</h2>
 <ul class="linklist">
-<li>{fermentation}</li>
-<li>{tunnel_compost}</li>
-<li>{mercury_filter}</li>
-<li>{mixed_fuel}</li>
-<li>{plastic_oil}</li>
-<li>{orange_oil}</li>
+<li>{fermentation_yt}</li>
+<li>{fermentation_g}</li>
+<li>{tunnel_compost_yt}</li>
+<li>{tunnel_compost_g}</li>
+<li>{mercury_filter_g}</li>
+<li>{mercury_filter_yt}</li>
+<li>{mixed_fuel_yt}</li>
+<li>{mixed_fuel_g}</li>
+<li>{plastic_oil_yt}</li>
+<li>{plastic_oil_g}</li>
+<li>{orange_oil_yt}</li>
+<li>{orange_oil_g}</li>
 </ul>
 
 <h2>陸上養殖・農業・林業</h2>
@@ -251,12 +257,18 @@ fn municipal_page() -> Html<String> {
 </ul>
 "#,
         drone = youtube_search_link("工場・倉庫誘致PR ドローン空撮", "工場 倉庫 企業誘致 ドローン 空撮"),
-        fermentation = youtube_search_link("生ごみを発酵させて肥料・燃料にする方法", "生ごみ 発酵 肥料 燃料 納豆菌"),
-        tunnel_compost = youtube_search_link("生ごみ+燃えるごみを一緒に発酵させるトンネルコンポスト方式", "トンネルコンポスト 生ごみ 燃えるごみ 発酵 肥料 燃料"),
-        mercury_filter = google_search_link("ごみ焼却時の水銀ガス回収 日立造船フィルター", "ごみ焼却 水銀ガス 回収 日立造船 フィルター"),
-        mixed_fuel = youtube_search_link("燃えるごみとプラスチックごみを混ぜて燃料にする", "燃えるごみ プラスチックごみ 混ぜる 燃料"),
-        plastic_oil = youtube_search_link("廃プラスチックを業務用マイクロ波で石油にする", "廃プラスチック 業務用 マイクロ波 石油"),
-        orange_oil = youtube_search_link("発泡スチロールをオレンジオイルで溶かす", "発泡スチロール オレンジオイル 溶かす"),
+        fermentation_yt = youtube_search_link("生ごみを発酵させて肥料・燃料にする方法", "生ごみ 発酵 肥料 燃料 納豆菌"),
+        fermentation_g = google_search_link("生ごみを発酵させて肥料・燃料にする方法", "生ごみ 発酵 肥料 燃料 納豆菌"),
+        tunnel_compost_yt = youtube_search_link("生ごみ+燃えるごみを一緒に発酵させるトンネルコンポスト方式", "トンネルコンポスト 生ごみ 燃えるごみ 発酵 肥料 燃料"),
+        tunnel_compost_g = google_search_link("生ごみ+燃えるごみを一緒に発酵させるトンネルコンポスト方式", "トンネルコンポスト 生ごみ 燃えるごみ 発酵 肥料 燃料"),
+        mercury_filter_g = google_search_link("ごみ焼却時の水銀ガス回収 日立造船フィルター", "ごみ焼却 水銀ガス 回収 日立造船 フィルター"),
+        mercury_filter_yt = youtube_search_link("ごみ焼却時の水銀ガス回収 日立造船フィルター", "ごみ焼却 水銀ガス 回収 日立造船 フィルター"),
+        mixed_fuel_yt = youtube_search_link("燃えるごみとプラスチックごみを混ぜて燃料にする", "燃えるごみ プラスチックごみ 混ぜる 燃料"),
+        mixed_fuel_g = google_search_link("燃えるごみとプラスチックごみを混ぜて燃料にする", "燃えるごみ プラスチックごみ 混ぜる 燃料"),
+        plastic_oil_yt = youtube_search_link("廃プラスチックを業務用マイクロ波で石油にする", "廃プラスチック 業務用 マイクロ波 石油"),
+        plastic_oil_g = google_search_link("廃プラスチックを業務用マイクロ波で石油にする", "廃プラスチック 業務用 マイクロ波 石油"),
+        orange_oil_yt = youtube_search_link("発泡スチロールをオレンジオイルで溶かす", "発泡スチロール オレンジオイル 溶かす"),
+        orange_oil_g = google_search_link("発泡スチロールをオレンジオイルで溶かす", "発泡スチロール オレンジオイル 溶かす"),
         aquaculture = youtube_search_link("陸上養殖(プール・水槽)魚介類 普及", "陸上養殖 プール 水槽 魚介類"),
         aquaculture_success_g = google_search_link("陸上養殖 成功例", "陸上養殖 成功例"),
         aquaculture_success_yt = youtube_search_link("陸上養殖 成功例", "陸上養殖 成功例"),
