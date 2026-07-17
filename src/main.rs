@@ -222,6 +222,22 @@ Chrome側の更新で解消することが多いです。</p>
 <ul class="linklist">
 <li>{chrome_root_store_search}</li>
 </ul>
+
+<h2>サイトが表示されない場合(DNS_PROBE_FINISHED_NXDOMAIN等)の対処方法</h2>
+<p>お使いのDNS(特にCloudflareの1.1.1.1)が、ドメインの権威サーバーに
+一時的に到達できないことがあります(<code>SERVFAIL — EDE: 22 (No
+Reachable Authority)</code>)。この場合、Google(8.8.8.8)・Quad9(9.9.9.9)
+など別のDNSでは問題なく解決できることが多いです。</p>
+<p><strong>対処法:</strong></p>
+<ol>
+<li>スマホのモバイル回線(Wi-Fiオフ)で同じURLにアクセスしてみる(別の
+DNSを経由するため、これだけで見えることが多い)</li>
+<li>Windowsの場合: 設定 → ネットワークとインターネット → プロパティ
+(使用中の接続) → DNSサーバーの割り当てを「手動」にし、IPv4に
+<code>8.8.8.8</code> / <code>8.8.4.4</code>(Google)を設定して保存</li>
+<li>それでも解決しない場合は、単純にDNSの反映待ち(通常数分〜1時間程度)
+であることも多いので、時間を置いて再度アクセス</li>
+</ol>
 "#,
         chrome_root_store_search = google_search_link("Chrome Root Store とは", "Chrome Root Store 証明書 保護されていない通信"),
     );
