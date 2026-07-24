@@ -396,9 +396,10 @@ this site does not add its own medical claims about efficacy or safety. Please s
 衝撃波で腫瘍を破壊「メスも針も使わない」肝臓がんの新治療法　大阪公立大の研究チームが特定臨床研究を開始　来年中の薬事承認を目指す</a><br>
 <span style="color:#555;">Destroying Tumors with Shockwaves — a New "No Scalpel, No Needle" Liver Cancer Treatment: Osaka Metropolitan University Research Team Begins Specified Clinical Research, Aiming for Drug/Medical Device Approval Within the Next Year</span></li>
 
-<li><a href="https://www.youtube.com/watch?v=84EkcJmgmnQ" target="_blank" rel="noopener noreferrer">
-世界初！からだ自身が"がん治療"　九州大学が開発</a><br>
-<span style="color:#555;">A World First! The Body Itself Fights Cancer — Developed by Kyushu University</span></li>
+<li>マックトリガー。世界初！からだ自身が"がん治療"　九州大学が開発<br>
+<span style="color:#555;">Mac Trigger. A World First! The Body Itself Fights Cancer — Developed by Kyushu University</span><br>
+<a href="https://www.youtube.com/watch?v=84EkcJmgmnQ" target="_blank" rel="noopener noreferrer">YouTube</a> /
+<a href="https://www.facebook.com/reel/1793445321653771?locale=ja_JP" target="_blank" rel="noopener noreferrer">Facebook(予備 / backup)</a></li>
 </ul>
 "##.to_string();
     Html(page_shell("がん治療研究に関する報道 | aon.tokyo", &body))
