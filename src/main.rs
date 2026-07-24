@@ -64,6 +64,16 @@ fn youtube_search_link(label: &str, query: &str) -> String {
     )
 }
 
+/// Googleの動画検索(YouTube以外の動画サイトも横断的に含まれる)を、
+/// クリックした瞬間に行うリンク。
+fn google_video_search_link(label: &str, query: &str) -> String {
+    format!(
+        r#"<a href="https://www.google.com/search?q={}&tbm=vid" target="_blank" rel="noopener noreferrer">🎬 {}</a>"#,
+        percent_encode(query),
+        label
+    )
+}
+
 fn page_shell(title: &str, body: &str) -> String {
     format!(
         r#"<!DOCTYPE html>
@@ -385,7 +395,8 @@ fn municipal_page() -> Html<String> {
 /// (「〜という報道があります」という紹介・引用の体裁に徹する)。
 #[handler]
 fn cancer_page() -> Html<String> {
-    let body = r##"<h1>民間のガン治療法に関する報道 / News on Cancer Treatment Research</h1>
+    let body = format!(
+        r##"<h1>民間のガン治療法に関する報道 / News on Cancer Treatment Research</h1>
 <p>以下は報道・公開情報として紹介するのみで、当サイト独自の医療的な効能や安全性の主張・推奨は行っていません。
 詳細は各リンク先をご覧ください。</p>
 <p style="color:#555;">The items below are simply introduced as reported/published information;
@@ -400,8 +411,17 @@ this site does not add its own medical claims about efficacy or safety. Please s
 <span style="color:#555;">Mac Trigger. A World First! The Body Itself Fights Cancer — Developed by Kyushu University</span><br>
 <a href="https://www.youtube.com/watch?v=84EkcJmgmnQ" target="_blank" rel="noopener noreferrer">YouTube</a> /
 <a href="https://www.facebook.com/reel/1793445321653771?locale=ja_JP" target="_blank" rel="noopener noreferrer">Facebook(予備 / backup)</a></li>
+<li>{cancer_search_jp} / {cancer_search_en}<br>
+<span style="color:#555;">クリックした瞬間に検索結果を表示します(効果を保証するものではありません) / Opens a fresh search each time you click (no claims of efficacy are made here).</span></li>
+<li>{cancer_video_search_jp} / {cancer_video_search_en}<br>
+<span style="color:#555;">YouTube以外の動画も含めた横断検索です(効果を保証するものではありません) / A broader video search beyond YouTube (no claims of efficacy are made here).</span></li>
 </ul>
-"##.to_string();
+"##,
+        cancer_search_jp = youtube_search_link("がんの治療法について調べる", "がん 治療法"),
+        cancer_search_en = youtube_search_link("Cancer treatment methods", "cancer treatment methods"),
+        cancer_video_search_jp = google_video_search_link("がんの治療法の動画を調べる", "がん 治療法"),
+        cancer_video_search_en = google_video_search_link("Cancer treatment method videos", "cancer treatment methods"),
+    );
     Html(page_shell("がん治療研究に関する報道 | aon.tokyo", &body))
 }
 
