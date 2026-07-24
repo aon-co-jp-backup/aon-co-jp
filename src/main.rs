@@ -84,7 +84,7 @@ footer {{ margin-top: 3rem; font-size: 0.85rem; color: #777; }}
 </style>
 </head>
 <body>
-<nav><a href="/">TOP</a> <a href="/links">リンク集</a> <a href="/municipal">地域・企業誘致提案</a> <a href="{ARUARU_TOKYO_URL}">aruaru.tokyo</a></nav>
+<nav><a href="/">TOP</a> <a href="/links">リンク集</a> <a href="/municipal">地域・企業誘致提案</a> <a href="/cancer">がん治療研究</a> <a href="{ARUARU_TOKYO_URL}">aruaru.tokyo</a></nav>
 {body}
 <footer><p>このサイトは aon.tokyo / aon.co.jp として同一内容を配信しています。 <a href="{GITHUB_ORG_URL}">GitHub (aon-co-jp)</a></p></footer>
 </body>
@@ -379,6 +379,31 @@ fn municipal_page() -> Html<String> {
     Html(page_shell("地域・企業誘致提案 | aon.tokyo", &body))
 }
 
+/// 民間のガン治療法に関する報道記事の紹介ページ(2026-07-24追加)。
+/// ユーザーから提供された実際の報道見出し・リンクをそのまま紹介するのみに留め、
+/// 独自の医療的な効能・安全性の主張や推奨は一切追加しない
+/// (「〜という報道があります」という紹介・引用の体裁に徹する)。
+#[handler]
+fn cancer_page() -> Html<String> {
+    let body = r##"<h1>民間のガン治療法に関する報道 / News on Cancer Treatment Research</h1>
+<p>以下は報道・公開情報として紹介するのみで、当サイト独自の医療的な効能や安全性の主張・推奨は行っていません。
+詳細は各リンク先をご覧ください。</p>
+<p style="color:#555;">The items below are simply introduced as reported/published information;
+this site does not add its own medical claims about efficacy or safety. Please see each link for details.</p>
+
+<ul class="linklist">
+<li><a href="https://www.facebook.com/masahiro.ishizuka.54?locale=ja_JP" target="_blank" rel="noopener noreferrer">
+衝撃波で腫瘍を破壊「メスも針も使わない」肝臓がんの新治療法　大阪公立大の研究チームが特定臨床研究を開始　来年中の薬事承認を目指す</a><br>
+<span style="color:#555;">Destroying Tumors with Shockwaves — a New "No Scalpel, No Needle" Liver Cancer Treatment: Osaka Metropolitan University Research Team Begins Specified Clinical Research, Aiming for Drug/Medical Device Approval Within the Next Year</span></li>
+
+<li><a href="https://www.youtube.com/watch?v=84EkcJmgmnQ" target="_blank" rel="noopener noreferrer">
+世界初！からだ自身が"がん治療"　九州大学が開発</a><br>
+<span style="color:#555;">A World First! The Body Itself Fights Cancer — Developed by Kyushu University</span></li>
+</ul>
+"##.to_string();
+    Html(page_shell("がん治療研究に関する報道 | aon.tokyo", &body))
+}
+
 #[tokio::main]
 async fn main() -> Result<(), std::io::Error> {
     tracing_subscriber::fmt::init();
@@ -386,7 +411,8 @@ async fn main() -> Result<(), std::io::Error> {
         .at("/", get(top))
         .at("/healthz", get(healthz))
         .at("/links", get(links_page))
-        .at("/municipal", get(municipal_page));
+        .at("/municipal", get(municipal_page))
+        .at("/cancer", get(cancer_page));
 
     tracing::info!("aon-tokyo-server listening on 127.0.0.1:4200");
     Server::new(TcpListener::bind("127.0.0.1:4200")).run(app).await
