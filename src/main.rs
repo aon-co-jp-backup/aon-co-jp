@@ -473,9 +473,10 @@ fn cancer_page() -> Html<String> {
 this site does not add its own medical claims about efficacy or safety. Please see each link for details.</p>
 
 <ul class="linklist">
-<li><a href="https://www.facebook.com/masahiro.ishizuka.54?locale=ja_JP" target="_blank" rel="noopener noreferrer">
-衝撃波で腫瘍を破壊「メスも針も使わない」肝臓がんの新治療法　大阪公立大の研究チームが特定臨床研究を開始　来年中の薬事承認を目指す</a><br>
-<span style="color:#555;">Destroying Tumors with Shockwaves — a New "No Scalpel, No Needle" Liver Cancer Treatment: Osaka Metropolitan University Research Team Begins Specified Clinical Research, Aiming for Drug/Medical Device Approval Within the Next Year</span></li>
+<li>衝撃波で腫瘍を破壊「メスも針も使わない」肝臓がんの新治療法　大阪公立大の研究チームが特定臨床研究を開始　来年中の薬事承認を目指す<br>
+<span style="color:#555;">Destroying Tumors with Shockwaves — a New "No Scalpel, No Needle" Liver Cancer Treatment: Osaka Metropolitan University Research Team Begins Specified Clinical Research, Aiming for Drug/Medical Device Approval Within the Next Year</span><br>
+<a href="https://www.youtube.com/watch?v=hRFXYCGX8Fo" target="_blank" rel="noopener noreferrer">YouTube</a> /
+<a href="https://www.facebook.com/masahiro.ishizuka.54?locale=ja_JP" target="_blank" rel="noopener noreferrer">Facebook</a></li>
 
 <li>マックトリガー。世界初！からだ自身が"がん治療"　九州大学が開発<br>
 <span style="color:#555;">Mac Trigger. A World First! The Body Itself Fights Cancer — Developed by Kyushu University</span><br>
