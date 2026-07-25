@@ -162,7 +162,8 @@ fn top() -> Html<String> {
 <a href="https://aruaru.tokyo/">aruaru.tokyo</a> ・
 <a href="https://karu.tokyo/">karu.tokyo</a> ・
 <a href="https://icpo.tokyo/">icpo.tokyo</a> ・
-<a href="https://fbi.tokyo/">fbi.tokyo</a></p>
+<a href="https://fbi.tokyo/">fbi.tokyo</a> ・
+<a href="https://runo.tokyo/">runo.tokyo</a></p>
 
 {easy_free_domain_top_banner}
 
@@ -482,7 +483,8 @@ fn cancer_page() -> Html<String> {
 <a href="https://aruaru.tokyo/">aruaru.tokyo</a> ・
 <a href="https://karu.tokyo/">karu.tokyo</a> ・
 <a href="https://icpo.tokyo/">icpo.tokyo</a> ・
-<a href="https://fbi.tokyo/">fbi.tokyo</a></p>
+<a href="https://fbi.tokyo/">fbi.tokyo</a> ・
+<a href="https://runo.tokyo/">runo.tokyo</a></p>
 <p>以下は報道・公開情報として紹介するのみで、当サイト独自の医療的な効能や安全性の主張・推奨は行っていません。
 詳細は各リンク先をご覧ください。</p>
 <p style="color:#555;">The items below are simply introduced as reported/published information;
