@@ -481,16 +481,11 @@ this site does not add its own medical claims about efficacy or safety. Please s
 <span style="color:#555;">Mac Trigger. A World First! The Body Itself Fights Cancer — Developed by Kyushu University</span><br>
 <a href="https://www.youtube.com/watch?v=84EkcJmgmnQ" target="_blank" rel="noopener noreferrer">YouTube</a> /
 <a href="https://www.facebook.com/reel/1793445321653771?locale=ja_JP" target="_blank" rel="noopener noreferrer">Facebook(予備 / backup)</a></li>
-<li>{cancer_search_jp} / {cancer_search_en}<br>
-<span style="color:#555;">クリックした瞬間に検索結果を表示します(効果を保証するものではありません) / Opens a fresh search each time you click (no claims of efficacy are made here).</span></li>
-<li>{cancer_video_search_jp} / {cancer_video_search_en}<br>
-<span style="color:#555;">YouTube以外の動画も含めた横断検索です(効果を保証するものではありません) / A broader video search beyond YouTube (no claims of efficacy are made here).</span></li>
-<li>{banana_search_jp} / {banana_search_en}<br>
-<span style="color:#555;">クリックした瞬間に検索結果を表示します(効果を保証するものではありません) / Opens a fresh search each time you click (no claims of efficacy are made here).</span></li>
-<li>{baking_soda_search_jp} / {baking_soda_search_en}<br>
-<span style="color:#555;">クリックした瞬間に検索結果を表示します(効果を保証するものではありません) / Opens a fresh search each time you click (no claims of efficacy are made here).</span></li>
-<li>{citric_acid_search_jp} / {citric_acid_search_en}<br>
-<span style="color:#555;">クリックした瞬間に検索結果を表示します(効果を保証するものではありません) / Opens a fresh search each time you click (no claims of efficacy are made here).</span></li>
+<li>{cancer_search_jp} / {cancer_search_en}</li>
+<li>{cancer_video_search_jp} / {cancer_video_search_en}</li>
+<li>{banana_search_jp} / {banana_search_en}</li>
+<li>{baking_soda_search_jp} / {baking_soda_search_en}</li>
+<li>{citric_acid_search_jp} / {citric_acid_search_en}</li>
 </ul>
 "##,
         cancer_search_jp = youtube_search_link("がんの治療法について調べる", "がん 治療法"),
