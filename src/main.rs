@@ -193,7 +193,7 @@ aon.tokyo と aon.co.jp は同一内容を配信しています。 姉妹サイ�
 <li>{yamaha_amp_yt}</li>
 </ul>
 
-<h3>SPEC RPA-MG1000 / RPA-MG3000(国産最高峰の超弩級ハイエンドアンプ)</h3>
+<h3 id="spec">SPEC RPA-MG1000 / RPA-MG3000(国産最高峰の超弩級ハイエンドアンプ)</h3>
 <p>日本の高級オーディオメーカー、スペック株式会社(SPEC)のフラグシップ・パワーアンプ。
 アンプ本体と巨大な外付け電源ユニットが同一サイズのウッドパネル筐体で横並びになる特徴的なスタイルで、
 モノラルペア(計4筐体)で税込約1,000万円に達する。</p>
@@ -202,7 +202,7 @@ aon.tokyo と aon.co.jp は同一内容を配信しています。 姉妹サイ�
 <li>{spec_yt}</li>
 </ul>
 
-<h3>PASS LABS</h3>
+<h3 id="pass-labs">PASS LABS</h3>
 <ul class="linklist">
 <li><a href="https://www.moon-audio.com/collections/brands-pass-labs" target="_blank" rel="noopener noreferrer">Pass Labs (English, via Moon Audio)</a></li>
 <li><a href="https://www.electori.co.jp/pass/" target="_blank" rel="noopener noreferrer">Pass Labs (日本正規代理店、株式会社エレクトリ)</a></li>
