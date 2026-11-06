@@ -3,8 +3,31 @@
 `aon.co.jp`のTOPページ。[aon-tokyo](https://github.com/aon-co-jp/aon-tokyo)(`aon.tokyo`)と同一内容を配信。
 Rust + RPoem製、DB非依存の1バイナリ完結サーバー。詳細は`CLAUDE.md`参照。
 
-RPeom
+https://aruaru.tokyo
+
+https://maid-cafe.tokyo
+https://github.com/aon-co-jp/maid-cafe-english/blob/master/README.md
+
+RPeom(RustフレームワークのPoemをリスペクト致しました。）
 https://github.com/aon-co-jp/RPoem/blob/main/README.md
+
+aruaru-llm 契約不要の無料で利用出来るローカルLLM　AI。
+https://github.com/aon-co-jp/aruaru-llm/blob/main/README.md
+
+aruaru-search 制限を全廃撤廃して無制限に検索可能。
+https://github.com/aon-co-jp/aruaru-search/blob/main/README.md
+
+open-cuda CUDAのオープン・ソース版
+https://github.com/aon-co-jp/open-cuda/blob/main/README/README.md
+
+open-directx
+https://github.com/aon-co-jp/open-directx/blob/main/README.md
+
+open-cpu(GPU高速化のCPU版）
+https://github.com/aon-co-jp/open-cpu/blob/main/README.md
+
+dream-os 地球上の全てのOSを融合
+https://github.com/aon-co-jp/dream-os/blob/main/README.md
 
 ## API 方針: REST 全廃・gRPC / Connect へ (2026-11-04)
 
