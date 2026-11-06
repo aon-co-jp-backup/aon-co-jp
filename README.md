@@ -3,6 +3,9 @@
 `aon.co.jp`のTOPページ。[aon-tokyo](https://github.com/aon-co-jp/aon-tokyo)(`aon.tokyo`)と同一内容を配信。
 Rust + RPoem製、DB非依存の1バイナリ完結サーバー。詳細は`CLAUDE.md`参照。
 
+RPeom
+https://github.com/aon-co-jp/RPoem/blob/main/README.md
+
 ## API 方針: REST 全廃・gRPC / Connect へ (2026-11-04)
 
 ### 日本語
