@@ -8,6 +8,9 @@ https://aruaru.tokyo
 https://maid-cafe.tokyo
 https://github.com/aon-co-jp/maid-cafe-english/blob/master/README.md
 
+aruaru-db(SnowFlake+CockroachDB）
+https://github.com/aon-co-jp/aruaru-db/blob/main/README.md
+
 RPeom(RustフレームワークのPoemをリスペクト致しました。）
 https://github.com/aon-co-jp/RPoem/blob/main/README.md
 
