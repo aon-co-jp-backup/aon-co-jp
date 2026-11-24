@@ -1,3 +1,5 @@
+> Latest translations / 翻訳の最新版: [0-LATEST-TRANSLATIONS.md](0-LATEST-TRANSLATIONS.md)
+
 # aon-co-jp
 
 `aon.co.jp`のTOPページ。[aon-tokyo](https://github.com/aon-co-jp/aon-tokyo)(`aon.tokyo`)と同一内容を配信。
